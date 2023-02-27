@@ -4,3 +4,50 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container{
+    margin: 0 auto;
+    max-width: 900px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider{
+    height: 400px;
+    width: 600px;
+    position: relative;
+}
+
+.prev, .next{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    z-index: 3;
+    cursor: pointer;
+    color: grey;
+    font-size: 1.5rem;
+}
+.prev{
+    top: 20px;
+    
+}
+.next{
+    bottom: 20px;
+}
+
+.item{
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.show{
+    display: block;
+}
+.item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
